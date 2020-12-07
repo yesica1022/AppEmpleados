@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="AppEmpleadosCrut_2_.App.Layout" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>App Empleados</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="Css/estilos.Css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="estiloBody">
+    <form id="form1" runat="server">
+            <!--Codigo html Menu-->
+            <header class="estiloHeader">
+        <nav class="menuNav">
+            <ul class="menuUl">
+                <li class="menuLi"> <a class="menuLink" href="./Default.aspx"> Home </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Listar.aspx"> Datos </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Formulario.aspx"> Formulario </a></li>
+                <li class="menuLi"> <a class="menuLink" href="./Nosotros.aspx"> Nosotros </a></li>
+            </ul>
+        </nav>
+    </header>
+            <!--Fin codigo html menu-->>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!--Codigo html footer-->
+
+            <footer class="estiloFooter">
+        <h3 class="textoFooter"> by:Yesica Alejandra Gama</h3>       
+        <div class="contenedorGib">
+            <div> 
+                &nbsp;<a href="https://https://github.com/yesicagama"><img class="ico" src="Pic/github.png" alt=""></a>
+
+            </div> 
+           <div> 
+            <small> Yesica1022 </small>
+           </div>
+          </div>
+         </footer>
+    </form>
+  </body>
+</html>
